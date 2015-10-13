@@ -1,0 +1,171 @@
+
+
+.mp-mod-container {
+	padding:15px;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.text-field {
+	padding-left: .5em;
+	padding-right: .5em;
+	text-align:center;
+}
+.btn-mp-module-view,
+.btn-mp-module-view:link,
+.btn-mp-module-view:active,
+.btn-mp-module-view:focus,
+.btn-mp-module-view:visited {
+	display: block;
+	font-family: LeagueGothic;
+	color: #fff;
+	background-color: #ca971f;
+	text-align:center;
+	width: 100%;
+	padding-top: 12px;
+	padding-left: 5px;
+	min-height: 45px;
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+.btn-mp-module-view:hover {
+	background-color: #E2B345;
+	text-decoration: none;
+}
+.btn-mp-module-view .glyphicon-play {
+	font-size: 16px;
+	transform: translateY(-1px);
+}
+.mp-th {
+	font-size: 24px;
+	text-align:center;
+	background-color: #ca971f;
+	font-family: LeagueGothic;
+	color: #fff;
+	height:60px;
+	padding-top: 13px;
+	margin-bottom: 5px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.row {
+	height: 45px;
+}
+
+.mp-col {
+	padding-left: 0;
+	padding-right: 5px;
+}
+.mp-content {
+	height: 45px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	padding: 10px;
+	background-color: #efecec;
+}
+.mp-content:last-child {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.mp-col1 .mp-content {
+	font-family: LeagueGothic;
+	font-size: 16px;
+	color: #404041;
+	text-align:left;
+	line-height: 1.1em;
+	text-transform: uppercase;
+}
+.mp-col2 .text-field, 
+.mp-col3-1 .text-field {
+	font-family: Pluto;
+	font-size: 11px;
+	text-align:center;
+	line-height: 1.3em;
+}
+.mp-col3-2  {
+	text-align:right;
+	padding-right: 0;
+}
+.mp-col3-2 .mp-content {
+	background-color: transparent;
+}
+.mp-footer {
+	background-color: #ca971f;
+	height: 50px;
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+		
+		
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+		.btn-mp-module-view,
+		.btn-mp-module-view:link,
+		.btn-mp-module-view:visited {
+
+			padding-top: 10px;
+			font-size: 24px;
+	
+		}
+		.btn-mp-module-view .glyphicon-play {
+			font-size: 19px;
+			transform: translateY(-1px);
+		}
+		.btn-mp-module-view:hover {
+			background-color: #E2B345;
+			text-decoration: none;
+		}
+		.mp-col {
+			padding-right: 10px;
+		}
+		.mp-col:last-child {
+			padding-right: 0;
+		}
+		.mp-content {
+			margin-bottom: 10px;
+		}
+		.mp-col1  .text-field {
+			font-size: 20px;
+			padding-right: 10px;
+			line-height: 1em;
+		}
+		.mp-col2 .text-field, 
+		.mp-col3-1 .text-field {
+			font-size: 12px;
+		}
+		.mp-th {
+			font-size: 30px;
+			margin-bottom: 10px;
+			padding-top: 10px;
+		}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

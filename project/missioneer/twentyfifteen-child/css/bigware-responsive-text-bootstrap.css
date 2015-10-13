@@ -1,0 +1,196 @@
+/*
+from Bigware:
+https://github.com/twbs/bootstrap/issues/11292
+
+Awesome helper script :)
+*/
+
+.text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
+    text-align: left;
+}
+.text-center-not-xs, .text-center-not-sm, .text-center-not-md, .text-center-not-lg {
+    text-align: center;
+}
+.text-right-not-xs, .text-right-not-sm, .text-right-not-md, .text-right-not-lg {
+    text-align: right;
+}
+.text-justify-not-xs, .text-justify-not-sm, .text-justify-not-md, .text-justify-not-lg {
+    text-align: justify;
+}
+
+/*** 
+
+I ADDED THE BLOCK ADDITIONS 
+-Jonathan Dymond 4-16-15
+
+.block-[left/right/center]-[xs/sm/md/lg] {}
+
+**/
+
+.block-left {
+	dislay: block;
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.block-right {
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.block-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 767px) {
+	
+		.block-left-xs {
+			dislay: block;
+			margin-left: 0;
+			margin-right: auto;
+		}
+		
+		.block-right-xs {
+			display: block;
+			margin-left: auto;
+			margin-right: 0;
+		}
+		
+		.block-center-xs {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	
+    .text-left-not-xs, .text-center-not-xs, .text-right-not-xs, .text-justify-not-xs {
+        text-align: inherit;
+    }
+    .text-left-xs {
+        text-align: left;
+    }
+    .text-center-xs {
+        text-align: center;
+    }
+    .text-right-xs {
+        text-align: right;
+    }
+    .text-justify-xs {
+        text-align: justify;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	
+		.block-left-sm {
+			dislay: block;
+			margin-left: 0;
+			margin-right: auto;
+		}
+		
+		.block-right-sm {
+			display: block;
+			margin-left: auto;
+			margin-right: 0;
+		}
+		
+		.block-center-sm {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	
+	
+    .text-left-not-sm, .text-center-not-sm, .text-right-not-sm, .text-justify-not-sm {
+        text-align: inherit;
+    }
+    .text-left-sm {
+        text-align: left;
+    }
+    .text-center-sm {
+        text-align: center;
+    }
+    .text-right-sm {
+        text-align: right;
+    }
+    .text-justify-sm {
+        text-align: justify;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+			.block-left-md {
+			dislay: block;
+			margin-left: 0;
+			margin-right: auto;
+		}
+		
+		.block-right-md {
+			display: block;
+			margin-left: auto;
+			margin-right: 0;
+		}
+		
+		.block-center-md {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	
+	
+	
+    .text-left-not-md, .text-center-not-md, .text-right-not-md, .text-justify-not-md {
+        text-align: inherit;
+    }
+    .text-left-md {
+        text-align: left;
+    }
+    .text-center-md {
+        text-align: center;
+    }
+    .text-right-md {
+        text-align: right;
+    }
+    .text-justify-md {
+        text-align: justify;
+    }
+}
+@media (min-width: 1200px) {
+	
+	
+			.block-left-lg {
+			dislay: block;
+			margin-left: 0;
+			margin-right: auto;
+		}
+		
+		.block-right-lg {
+			display: block;
+			margin-left: auto;
+			margin-right: 0;
+		}
+		
+		.block-center-lg {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	
+	
+    .text-left-not-lg, .text-center-not-lg, .text-right-not-lg, .text-justify-not-lg {
+        text-align: inherit;
+    }
+    .text-left-lg {
+        text-align: left;
+    }
+    .text-center-lg {
+        text-align: center;
+    }
+    .text-right-lg {
+        text-align: right;
+    }
+    .text-justify-lg {
+        text-align: justify;
+    }
+}

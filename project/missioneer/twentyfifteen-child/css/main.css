@@ -1,0 +1,658 @@
+
+/*	====================================================================
+	Web Fonts
+	==================================================================== */
+
+
+
+
+@font-face {
+    font-family: 'PlutoRegular';
+    src: url('../webfonts/plutoregular-webfont.eot');
+    src: url('../webfonts/plutoregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/plutoregular-webfont.woff2') format('woff2'),
+         url('../webfonts/plutoregular-webfont.woff') format('woff'),
+         url('../webfonts/plutoregular-webfont.ttf') format('truetype'),
+         url('../webfonts/plutoregular-webfont.svg#pluto_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PlutoRegular';
+    src: url('plutobold-webfont.eot');
+    src: url('plutobold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('plutobold-webfont.woff2') format('woff2'),
+         url('plutobold-webfont.woff') format('woff'),
+         url('plutobold-webfont.ttf') format('truetype'),
+         url('plutobold-webfont.svg#plutobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../webfonts/leaguegothic-webfont.eot');
+    src: url('../webfonts/leaguegothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/leaguegothic-webfont.woff2') format('woff2'),
+         url('../webfonts/leaguegothic-webfont.woff') format('woff'),
+         url('../webfonts/leaguegothic-webfont.ttf') format('truetype'),
+         url('../webfonts/leaguegothic-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+div.banner-tag {
+	position: relative;
+	text-align:center;
+	padding-bottom: 64px;
+}
+div.banner-tag img {
+	position:absolute;
+	top: -64px;
+	left: calc(50% - 64px);
+	z-index: 100;
+}
+
+/* Add respnosiveness to content images */
+
+
+.text-img {
+	display:block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.jumbotron {
+	background-position: 50%;
+	background-size:cover;
+	margin:0;
+	padding:0;
+}
+
+#jumbotron-home {
+	/*background-image: url(../images/hero-home.jpg); */
+	height: 760px;
+	position: relative;
+	
+	background-size: cover; 
+	background-position: 50% 50%;
+}
+
+#jumbotron-learn-more {
+	height: 527px;
+	background-image: url(../images/hero-learn-more.jpg);
+}
+
+#featured-banner {
+	background-position: 50% 50%;
+	background-size: cover;
+	padding: 0;
+/*	margin-bottom: 1em; */
+	height: 432px;
+	/*box-sizing:initial;*/
+}
+/*
+.modal
+{
+    overflow-y: auto;
+}
+
+.modal-open
+{
+   overflow:auto;
+   overflow-x:hidden;
+}
+*/
+/* this hack fixes the shifting issues when the modal opens */
+.modal-open .navbar-fixed-top {
+	padding-right: 17px;
+}
+.a-name {
+	display: block;
+}
+img.logo {
+	max-width: 100%;
+}
+.icn-info-bubble {
+	z-index:1000;
+	position:relative;
+}
+.icn-info-buttle img {
+	position: abosolute;
+	top: 0;
+	left: 0;
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.navbar-nobg {
+	border: none;
+	background: transparent;
+}
+
+body {
+	padding: 0;
+	color: #404041;
+}
+
+#footer-bottom-line {
+	margin: 16px auto 0 auto;
+	text-align:center;
+}
+
+.headline-banner {
+	color: #FFFFFF;
+	background: url(../images/fabric-gray-pattern-2.png) repeat;
+	min-height: 190px;
+	padding-bottom: 30px;
+}
+
+div.headline-banner h2 {
+	margin: 22px 0;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 500;
+	transform: scale(1.003,1.003);
+	font-family: LeagueGothic;
+}
+
+
+
+.banner-wrapper {
+	padding: 60px 0 180px 0;
+}
+
+.btn-home-trailer {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.bg-clouds {
+	background:url(../images/clouds-subdued-top.png) repeat-x, url(../images/desert-subdued-bottom.png) repeat-x;
+	background-position: center top, center bottom;
+	background-size: 100%;
+}
+
+.sub-logo {
+	height: 80px;
+}
+
+#lower-nav {
+	height: auto;	
+	width:100%;
+	padding: 12px;
+	text-align: center;
+}
+#lower-nav ul {
+	padding: 0;
+}
+#lower-nav-learn-more {
+	background-color: #fff;
+}
+#lower-nav ul {
+	list-style: none;
+	display:inline;
+}
+
+#lower-nav ul li {
+	display: inline;
+	padding: 10px;
+}
+
+#lower-nav ul li a {
+	font-family: PlutoRegular;
+	color: #404041;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 12.405px;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.44);
+	transform: scale(0.902,0.902);
+	text-transform: uppercase;
+}
+
+.hero-message {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+	top: 45%;
+	bottom: 0;
+}
+.hero-message h1 {
+	color: #fff;
+	display: block;
+	margin: 0;
+	font-size: 60px;
+}
+.hero-message a {
+	margin: 10px 0;
+	width: 182px;
+	height: 37px;
+	font-size: 18px;
+	color: #fff;
+	vertical-align: middle;
+	padding-bottom: 27px;
+}
+
+
+
+/* hack to get the first list item to disapear to fix wrapping issues */
+.nav-text li:first-child{
+	display:inline;
+}
+
+/* below 1024, hide */
+@media (max-width: 1024px) { 	
+	
+	.nav-text li:first-child{
+		display:none;
+	}
+	
+
+}
+
+
+@media (max-width: 767px) { 	
+	
+	.nav-text li:first-child{
+		display:inline;
+	}
+
+}
+@media (max-width: 767px) {
+	.collapse .in .nav-text {
+		border-radius: 5px;
+		background-color: rgba(202, 151, 31, 1);
+		margin: 0;
+
+	}
+	.collapse .in .nav-text li a:hover {
+		background: none;
+	}
+
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+	background-color: rgba(215,176,78,1.00);
+	color: #fff;;
+}
+.nav-text {
+	/*padding-bottom: 17px;*/
+	z-index: 10000;
+
+}
+
+
+.nav-text li a {
+  font-size: 14px;
+  font-family: PlutoRegular;
+
+  text-transform: uppercase;
+	border-radius: 3px;
+
+	
+	color: rgb(64, 64, 65);
+	text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.50);
+
+	
+  /*text-shadow: 0.5px 0.866px 0px rgba(255, 255, 255, 0.44); */
+ 	/*
+  color: rgb(64, 64, 65);
+	text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.50);
+	*/
+  -moz-transform: matrix( 0.90243189011298,0,0,0.90243189011298,0,0);
+  -webkit-transform: matrix( 0.90243189011298,0,0,0.90243189011298,0,0);
+  -ms-transform: matrix( 0.90243189011298,0,0,0.90243189011298,0,0);
+
+
+}
+.nav>li>a:focus, .nav>li>a:hover {
+	background: none;
+}
+
+.nav-text li a:hover {
+	background: rgba(0,0,0,0.10);
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	background: none;
+	color: #fff;
+	
+	/*text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);*/
+	text-shadow: none;
+}
+.navbar-fixed-top .page-logo {
+	width: 226px;
+}
+
+.navbar-toggle {
+	background-color:rgba(228,193,73,1.00);
+	border: 1px solid #fff;
+	border-radius: 4px;
+	margin-right: 0; 
+	margin-top: 15px;
+}
+.container>.navbar-header {
+	margin: 0;
+}
+#nav-fixed-menu .nav-text {
+	padding-top: 10px;
+}
+
+/*
+.nav-text li:last-child a{
+	padding-right: 0;
+}
+*/
+
+.nav-text  {
+	position: relative;
+	z-index:	100;
+	padding-top: 10px;
+}
+
+.page-logo {
+	padding: 10px 0;
+	float: left;
+}
+.logo-home {
+	/*padding-top: 20px;*/
+}
+
+
+/**
+ * 14.2 Galleries
+ */
+
+#project-map {
+	margin: 30px 0 20px 0;
+}
+
+.gallery {
+	margin: 0 0 1em 0;
+}
+
+
+
+.gallery-item {
+	display: inline-block;
+	padding: 1.79104477% 1.79104477% 1.79104477% 0;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+/*
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+
+	width: 150px;
+	box-sizing:content-box;
+}
+
+.gallery-columns-4 .gallery-item {
+	margin-left: 32px;
+}
+
+.gallery-columns-4 .gallery-item img {
+	margin: 0 auto 0 0;
+}
+*/
+/* first items on rows: up to 3 rows */
+.gallery-columns-4 	.gallery-item:nth-child(4n + 1)  {
+	margin-left: 0;
+}
+.gallery-columns-4 	.gallery-item:nth-child(4n + 1) img {
+	padding-left: 0;
+}
+/* last items on row: up to 3 rows */
+.gallery-columns-4	.gallery-item:nth-child(4n + 4) img {
+	padding-right: 0;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-icon img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.gallery-caption {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	display: block;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.hero-message {
+		bottom: 500px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.page-logo {
+		width: 250px;
+		padding-top: 10px;
+	}
+	.hero-message {
+
+	}
+	.banner-wrapper {
+		padding: 30px 0 100px 0; /* bottom changed from 60 for home video */
+	}
+}
+
+/* Small Devices, Tablets */
+@media screen and (max-width: 768px) {
+	.text-img {
+		max-width: 60%;
+	}
+	#jumbotron-home {
+		height: 503px!important;
+	}
+
+	#featured-banner {
+		height: 303px!important;
+	}
+	
+	.hero-message h1 {
+		font-size: 50px;
+	}
+	div.headline-banner h2 {
+		font-size: 45px;
+		line-height: 1.1em;
+	}
+	
+	.navbar-collapse li a { 
+		color: #fff; 
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.50);
+	}
+
+	div.banner-tag {
+		position: relative;
+		text-align:center;
+		padding-bottom: 64px;
+	}
+	div.banner-tag img {
+		position:absolute;
+		top: -64px;
+		left: calc(50% - 64px);
+		z-index: 100;
+	}
+	
+	.hero-message {
+
+	}
+	
+	.banner-wrapper {
+
+	}
+	
+}
+/* Extra Small Devices, Phones */ 
+@media screen and (max-width: 480px) {
+	.text-img {
+		max-width: 50%;
+	}
+	.jumbotron {
+		height: 403px!important;
+	}
+	
+	#jumbotron-home {
+		height: 403px!important;
+	}
+	
+	#featured-banner {
+		height: 203px!important;
+	}
+
+	.hero-message h1 {
+		font-size: 40px;
+	}
+	
+	.navbar-fixed-top .page-logo, .page-logo {
+		width: 200px;
+	}
+	
+	div.headline-banner h2 {
+		font-size: 40px;
+		line-height: 1.1em;
+	}
+	
+	div.banner-tag {
+		padding-bottom: 40px;
+	}
+	
+	div.banner-tag img {
+		top: -40px;
+		width: 80px!important;
+		left: calc(50% - 40px);
+	}
+
+	.banner-wrapper {
+		padding: 40px 0 60px 0;
+		
+	}
+
+
+	.hero-message {
+
+	}
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+	.hero-message {
+
+	}
+	.banner-wrapper {
+		padding: 0 0 50px 0;
+	}
+}
+
+
+/* ONLY FOR SHORT SCREEN HEIGHTS */
+
+@media screen and (max-height: 860px) {
+	#jumbotron-home {
+		height: 555px!important;
+	}
+}
+
+
+.alignleft {
+	display: inline;
+	float: left;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+img.alignleft {
+	margin: 0 15px 15px 0;
+}
+
+
+img.alignright {
+	margin: 0 0 15px 15px;
+}
+
+img.aligncenter {
+	margin: 0 15px;
+}
+
