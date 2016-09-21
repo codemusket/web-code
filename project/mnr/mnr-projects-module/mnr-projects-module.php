@@ -1,23 +1,23 @@
 <?php
 /**
-* Plugin Name: Missioneer Projects Module
-* Description: This plugin allows a shortcode to be added to any page to show a list of missioneer projects. Projects are added as posts in a category called 'Missioneer Project'. Shortcode is [missioneer-projects]. Parameters: order=[DESC|ASC], orderby=[date|ID|author|title|modified|parent|rand] num=[integer]. Eg: [missioneer_projects order="desc" orderby="date" num="10"]. Default is order="DESC" num="10" orderby="date".
+* Plugin Name: Mnr Projects Module
+* Description: This plugin allows a shortcode to be added to any page to show a list of mnr projects. Projects are added as posts in a category called 'mnr Project'. Shortcode is [mnr-projects]. Parameters: order=[DESC|ASC], orderby=[date|ID|author|title|modified|parent|rand] num=[integer]. Eg: [mnr_projects order="desc" orderby="date" num="10"]. Default is order="DESC" num="10" orderby="date".
 
 * Version: 1.0.0
 * Author: Jonathan Dymond
 */
 // Example 1 : WP Shortcode to display form on any page or post.
 function mnr_projects_module( $atts ){
-	echo "<!-- missioneer projects module -->";
+	echo "<!-- mnr projects module -->";
 
 	$params = shortcode_atts( array( 'order' => 'DESC', 'orderby' => 'date', 'num'	=> '10'), $atts );
 
-	// Display a list of post tagged 'missioneer project'
+	// Display a list of post tagged 'mnr project'
 	$args = array(
 		'posts_per_page'   => $params['num'],
 		'offset'           => 0,
 		'category'         => '',
-		'category_name'    => 'Missioneer Project',
+		'category_name'    => 'mnr Project',
 		'orderby'          => $params['orderby'],
 		'order'            => $params['order'],
 		'include'          => '',
@@ -42,7 +42,7 @@ $html_out .= "
 
 <div class='row'>
 <div class='mp-th col-xs-3'>PROJECT</div>
-<div class='mp-th col-xs-3'>MISSIONEER</div>
+<div class='mp-th col-xs-3'>mnr</div>
 <div class='mp-th col-xs-6'>LOCATION</div>
 <div class='mp-th hidden-xs'>&nbsp;</div>
 </div>
@@ -58,9 +58,9 @@ foreach( $project_posts as $pst ) {
 	
 
 	$mp_title 	= $pst->post_title;
-	$mp_name 		= $meta["mp_missioneer_name"][0];
-	$mp_location 	= $meta["mp_missioneer_location"][0];;
-	$mp_href 		= $meta["mp_missioneer_href"][0];;
+	$mp_name 		= $meta["mp_mnr_name"][0];
+	$mp_location 	= $meta["mp_mnr_location"][0];;
+	$mp_href 		= $meta["mp_mnr_href"][0];;
 
 
 	$html_out .= "
@@ -127,7 +127,7 @@ foreach( $project_posts as $pst ) {
    		</div>
 
 </div><!-- /mp-mod-container -->
-<!-- end missioneer projects module -->
+<!-- end mnr projects module -->
 
 
 	";
@@ -135,5 +135,5 @@ foreach( $project_posts as $pst ) {
 	return $html_out;
 }
 
-add_shortcode('missioneer_projects', 'mnr_projects_module');
+add_shortcode('mnr_projects', 'mnr_projects_module');
 ?>
